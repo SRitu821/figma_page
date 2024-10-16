@@ -1,0 +1,22 @@
+.category_conatainer{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+.heading{
+    margin-top: 5rem;
+    font-size: 16px;
+    color: #FFDE00;
+}
+.items_container{
+    color: #888888;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.img_name{
+    padding-top: 10px;
+}
