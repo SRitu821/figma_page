@@ -6,7 +6,7 @@
 //     <div className={styles.main_container}>
 //       <div className={styles.heading}>Today Best Profiles</div>
 //       <div className={styles.profile_box}>
-        
+
 //         <div className={styles.profile_Container}>
 //           <div className={styles.profile_img}>
 //             <img
@@ -48,7 +48,7 @@
 //                 Engagement
 //             </div>
 //             </div>
-            
+
 //           </div>
 //         </div>
 //       </div>
@@ -56,12 +56,18 @@
 // };
 // export default Profile;
 
-
-
 import styles from "./profiles.module.css";
 import { IoLocationOutline } from "react-icons/io5";
 
-const ProfileCard = ({ imgSrc, pplPic, userName, realName, location, followers, engagement }) => {
+const ProfileCard = ({
+  imgSrc,
+  pplPic,
+  userName,
+  realName,
+  location,
+  followers,
+  engagement,
+}) => {
   return (
     <div className={styles.profile_Container}>
       <div className={styles.profile_img}>
@@ -96,13 +102,60 @@ const ProfileCard = ({ imgSrc, pplPic, userName, realName, location, followers, 
 
 const Profile = () => {
   const profiles = [
-    { imgSrc: require("../Images/profile1.png"), pplPic: require("../Images/ppl1.png"), userName: "@brasel9", realName: "brady shelly", location: "India", followers: "32.2k", engagement: "6.64%" },
-    { imgSrc: require("../Images/profile2.png"), pplPic: require("../Images/pp2.png"), userName: "@brasel9", realName: "brady shelly", location: "India", followers: "32.2k", engagement: "6.64%" },
-    { imgSrc: require("../Images/profile3.png"), pplPic: require("../Images/ppl1.png"), userName: "@brasel9", realName: "brady shelly", location: "India", followers: "32.2k", engagement: "6.64%" },
-    { imgSrc: require("../Images/profile4.png"), pplPic: require("../Images/ppl1.png"), userName: "@brasel9", realName: "brady shelly", location: "India", followers: "32.2k", engagement: "6.64%" },
-    { imgSrc: require("../Images/profile5.png"), pplPic: require("../Images/ppl1.png"), userName: "@brasel9", realName: "brady shelly", location: "India", followers: "32.2k", engagement: "6.64%" },
-    { imgSrc: require("../Images/profile6.png"), pplPic: require("../Images/ppl1.png"), userName: "@brasel9", realName: "brady shelly", location: "India", followers: "32.2k", engagement: "6.64%" },
-  
+    {
+      imgSrc: require("../Images/profile1.png"),
+      pplPic: require("../Images/ppl1.png"),
+      userName: "@brasel9",
+      realName: "brady shelly",
+      location: "India",
+      followers: "32.2k",
+      engagement: "6.64%",
+    },
+    {
+      imgSrc: require("../Images/profile2.png"),
+      pplPic: require("../Images/pp2.png"),
+      userName: "@brasel9",
+      realName: "brady shelly",
+      location: "India",
+      followers: "32.2k",
+      engagement: "6.64%",
+    },
+    {
+      imgSrc: require("../Images/profile3.png"),
+      pplPic: require("../Images/ppl1.png"),
+      userName: "@brasel9",
+      realName: "brady shelly",
+      location: "India",
+      followers: "32.2k",
+      engagement: "6.64%",
+    },
+    {
+      imgSrc: require("../Images/profile4.png"),
+      pplPic: require("../Images/ppl1.png"),
+      userName: "@brasel9",
+      realName: "brady shelly",
+      location: "India",
+      followers: "32.2k",
+      engagement: "6.64%",
+    },
+    {
+      imgSrc: require("../Images/profile5.png"),
+      pplPic: require("../Images/ppl1.png"),
+      userName: "@brasel9",
+      realName: "brady shelly",
+      location: "India",
+      followers: "32.2k",
+      engagement: "6.64%",
+    },
+    {
+      imgSrc: require("../Images/profile6.png"),
+      pplPic: require("../Images/ppl1.png"),
+      userName: "@brasel9",
+      realName: "brady shelly",
+      location: "India",
+      followers: "32.2k",
+      engagement: "6.64%",
+    },
   ];
 
   return (
@@ -114,7 +167,8 @@ const Profile = () => {
         ))}
       </div>
       <div className={styles.viewbtn}>
-        <a className={styles.btn}>View more</a></div>
+        <a className={styles.btn}>View more</a>
+      </div>
     </div>
   );
 };

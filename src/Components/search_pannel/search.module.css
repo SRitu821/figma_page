@@ -30,15 +30,14 @@
   cursor: pointer;
   border-radius: 5px;
 }
-.search_div{
-    display: flex;
-    flex-direction: row;
+.search_div {
+  display: flex;
+  flex-direction: row;
 }
 .searchIcon {
   font-size: 18px;
   color: #98f24f;
   padding-right: 5px;
-
 }
 .filter button {
   margin-left: 14px;

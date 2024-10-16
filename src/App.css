@@ -1,14 +1,14 @@
-body{
+body {
   background-color: #000000;
 }
-.div_container{
+.div_container {
   display: flex;
   flex-direction: row;
 }
-.container1{
+.container1 {
   margin-left: 0px;
 }
-.container2{
+.container2 {
   margin-right: 5rem;
   margin-left: 5rem;
 }

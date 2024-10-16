@@ -46,7 +46,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.lower_part}>
-        © Copyright 2023 Solo . Powered with <IoHeart className={styles.logo2}/> by Netz00
+        © Copyright 2023 Solo . Powered with{" "}
+        <IoHeart className={styles.logo2} /> by Netz00
       </div>
     </div>
   );

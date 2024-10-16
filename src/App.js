@@ -9,19 +9,19 @@ function App() {
   return (
     <div className="App">
       <div className="div_container">
-      <div className="conatiner1">
-        <Pannel />
+        <div className="conatiner1">
+          <Pannel />
+        </div>
+        <div className="container2">
+          <Navbar />
+          <Search />
+          <Category />
+          <Profile />
+        </div>
       </div>
-      <div className="container2">
-        <Navbar />
-        <Search />
-        <Category />
-        <Profile />
+      <div className="footer">
+        <Footer />
       </div>
-      </div>
-     <div className="footer">
-      <Footer />
-     </div>
     </div>
   );
 }

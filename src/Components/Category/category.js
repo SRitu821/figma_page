@@ -75,7 +75,6 @@ const Category = () => {
 
 export default Category; */
 
-
 import styles from "./category.module.css";
 
 // Reusable component for each category item
@@ -83,7 +82,10 @@ const CategoryItem = ({ imgSrc, name }) => {
   return (
     <div className={styles.items}>
       <div className={styles.img_box}>
-        <img src={require(`../Images/${imgSrc}.png`)} className={styles.img}></img>
+        <img
+          src={require(`../Images/${imgSrc}.png`)}
+          className={styles.img}
+        ></img>
       </div>
       <div className={styles.img_name}>{name}</div>
     </div>
@@ -106,7 +108,11 @@ const Category = () => {
       <div className={styles.heading}>Search By Category</div>
       <div className={styles.items_container}>
         {categories.map((category, index) => (
-          <CategoryItem key={index} imgSrc={category.imgSrc} name={category.name} />
+          <CategoryItem
+            key={index}
+            imgSrc={category.imgSrc}
+            name={category.name}
+          />
         ))}
       </div>
     </div>
